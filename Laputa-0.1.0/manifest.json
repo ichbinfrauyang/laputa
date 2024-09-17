@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "LAPUTA",
+  "author": "Rujia Yang",
+  "description": "Content Engineer tool for Atlas, Crimson, ...",
+  "version": "0.1.0",
+  "icons": {
+    "16": "images/laputa16.png",
+    "48": "images/laputa48.png",
+    "96": "images/laputa96.png",
+    "128": "images/laputa128.png",
+    "256": "images/laputa256.png"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_icon": "images/laputa128.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://atlas.meltwater.io/*"],
+      "css": ["style/atlas.css"],
+      "js": [
+        "plugins/jquery.js",
+        "plugins/jquery-1.5.2.min.js",
+        "plugins/arrive.js",
+        "plugins/xpath.js",
+        "test.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://crimson.meltwater.io/worksheet/show*"],
+      "css": ["worksheet.css"],
+      "js": ["plugins/jquery.js", "plugins/arrive.js", "worksheet.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "script": [
+      "plugins/jquery.js",
+      "plugins/localstoragedb.js",
+      "functions.js",
+      "plugins/arrive.js"
+    ],
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["options.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["activeTab", "contextMenus", "storage", "tabs", "scripting", "cookies"]
+}

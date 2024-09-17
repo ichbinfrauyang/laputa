@@ -1,0 +1,35 @@
+/* .btn1 {
+  background-color: #f6c23e;
+} */
+
+.btn2 {
+  background-color: #f6c23e;
+  border: none;
+  color: white;
+  /* padding: 10px 10px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px; */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  height: 22px;
+  float: right;
+}
+.text-note {
+  /* width: 62%; */
+  height: 25px;
+  padding-top: 0.5px;
+  padding-bottom: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  box-sizing: content-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 13px;
+  /* resize: none; */
+  float: right;
+}

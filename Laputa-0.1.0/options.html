@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Option for LAPUTA</title>
+    <style>
+      body {
+        background-color: rgb(249, 249, 249);
+        color: rgb(61, 12, 163);
+      }
+      h1 {
+        background-color: rgb(61, 12, 163);
+        color: #ffffff;
+      }
+      button {
+        background-color: white;
+        color: rgb(61, 12, 163);
+        border-radius: 4px;
+        border: 2px solid rgb(61, 12, 163);
+        padding: 5px 5px;
+        width: 100%;
+        font-size: large;
+      }
+      button:hover {
+        background-color: rgb(61, 12, 163, 0.5);
+        color: rgb(61, 12, 163);
+        border-radius: 4px;
+        padding: 5px 5px;
+        width: 100%;
+        font-size: large;
+      }
+      tr:nth-child(odd) {
+        background: #eaeaea;
+      }
+      tr:nth-child(even) {
+        background: rgb(61, 12, 163, 0.3);
+      }
+      td {
+        padding: 2px;
+      }
+      .options {
+        padding-top: 24px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><img src="" valign="middle" /> Atlas options:</h1>
+    <span class="options">Global settings</span>
+    <table width="50%">
+      <tr>
+        <td>
+          <input type="checkbox" id="altas_popup_page" />
+          <label>1. Popup Page Links on Top bar</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="atlas_global_addRss" />
+          <label>2. Rss/Sitemap finder</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="atlas_preview_highlighter" />
+          <label>3. Preview Result highlighter</label>
+        </td>
+      </tr>
+    </table>
+    <span class="options">Source Config</span>
+    <table width="50%">
+      <tr>
+        <td>
+          <input type="checkbox" id="atlas_adicts_highlighter" />
+          <label>4. ADICTs XPath Highlighter</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="atlas_date_xpath_generator" />
+          <label>5. Date-Xpath Solutions</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="atlas_replace_json_editor" />
+          <label>6. JSON editor Text fields</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="altas_config_addDefaultLinks" />
+          <label>7. Add Default Link Patterns</label>
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <h1><img src="" valign="middle" /> Crimson options:</h1>
+    <table width="50%">
+      <tr>
+        <td>
+          <input type="checkbox" id="cri_add_notes_cws" />
+          <label>8. Add CWS Notes</label>
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <br />
+    <br /><br />
+    <button id="save">Save</button>
+    <div id="alert"></div>
+    <script src="options.js"></script>
+  </body>
+</html>

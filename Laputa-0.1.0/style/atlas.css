@@ -1,0 +1,161 @@
+/* Top search bar links */
+
+/* 1 */
+body
+  > app-root
+  > app-admin-layout
+  > div
+  > mat-toolbar
+  > div
+  > a:nth-child(1)
+  > button {
+  background-color: #313f8c;
+  color: white;
+  border: 0ch;
+  margin-left: 3em;
+}
+/* 2 */
+body
+  > app-root
+  > app-admin-layout
+  > div
+  > mat-toolbar
+  > div
+  > a:nth-child(5)
+  > button {
+  background-color: #313f8c;
+  color: white;
+  border: 0ch;
+}
+/* 3 */
+body
+  > app-root
+  > app-admin-layout
+  > div
+  > mat-toolbar
+  > div
+  > a:nth-child(2)
+  > button {
+  background-color: #313f8c;
+  color: white;
+  border: 0ch;
+}
+/* 4 */
+body
+  > app-root
+  > app-admin-layout
+  > div
+  > mat-toolbar
+  > div
+  > a:nth-child(3)
+  > button {
+  background-color: #313f8c;
+  color: white;
+  border: 0ch;
+}
+/* 5 */
+body
+  > app-root
+  > app-admin-layout
+  > div
+  > mat-toolbar
+  > div
+  > a:nth-child(4)
+  > button {
+  background-color: #313f8c;
+  color: white;
+  border: 0ch;
+}
+/* 5 */
+body
+  > app-root
+  > app-admin-layout
+  > div
+  > mat-drawer-container
+  > mat-drawer-content
+  > app-source-container
+  > app-page-load
+  > div
+  > mat-drawer-container
+  > mat-drawer
+  > div
+  > app-source-sidenav
+  > div
+  > div.menu-buttons
+  > button:nth-child(8) {
+  align-self: baseline;
+  background-color: mediumorchid;
+}
+
+/*** Article Extractor > Select Language Options ***/
+
+#result {
+  color: darkblue;
+  left: 11px;
+}
+
+#options {
+  background-color: DodgerBlue;
+  font-family: Arial;
+  color: white;
+  height: fit-content;
+  border-radius: 4px;
+}
+
+/*** Article Extractor ***/
+/* Title */
+/* app-article-extractor-editor
+  > form
+  > mat-card:nth-child(3)
+  > .mat-card-content
+  > div
+  > div:nth-child(2) {
+  background-color: rgb(238, 129, 195, 0.75);
+} */
+/* Byline */
+/* app-article-extractor-editor
+  > form
+  > mat-card:nth-child(3)
+  > .mat-card-content
+  > div
+  > div:nth-child(3) {
+  background-color: rgb(139, 196, 250, 0.8);
+} */
+/* Content */
+/* app-article-extractor-editor
+  > form
+  > mat-card:nth-child(3)
+  > .mat-card-content
+  > div
+  > [formgroupname="content"]
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div:nth-child(1) {
+  background-color: rgb(157, 252, 202, 0.8);
+} */
+/* Ingress */
+/* app-article-extractor-editor
+  > form
+  > mat-card:nth-child(3)
+  > .mat-card-content
+  > div
+  > [formgroupname="ingress"]
+  > div
+  > div
+  > div:nth-child(2) {
+  background-color: rgb(210, 253, 138, 0.8);
+} */
+/* Date */
+/* app-article-extractor-editor
+  > form
+  > mat-card:nth-child(3)
+  > .mat-card-content
+  > div
+  > *:not(div):last-of-type
+  > div
+  > div
+  > div:first-child {
+  background-color: rgb(246, 200, 132, 0.8);
+} */
